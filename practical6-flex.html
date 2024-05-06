@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+{
+  box-sizing: border-box;
+}
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+header {
+    background-color:	#262626	;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+header {
+    height: 400px;}
+.vertical-nav {
+    display: flex; /* устанавливаем flexbox для навигационной панели 
+    margin-top: -550px;
+    right: 0;
+    width: 15%; /* Ширина вашего вертикального меню */
+    height: 100vh;
+    background-color: #646464;
+    color: rgb(19, 46, 16);
+    padding-right: 15px;
+    margin-right: 20px; /* устанавливаем отступы справа для ссылок */
+}
+ul {list-style: none;}
+        li::before {
+            content: ""; 
+            padding-right: 65px; 
+            color: rgb(19, 19, 19); 
+        }
+
+.vertical-nav h3 {
+    text-align: center;
+}
+
+.vertical-nav ul {
+    list-style: none;
+}
+
+.vertical-nav ul li {
+    padding: 200px;
+}
+
+
+article {
+  float: left;
+  
+  width: 85%;
+  height: 1300px;
+  background-color:	#e0e0e0	;
+   /* only for demonstration, should be removed */
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 700px) {
+   
+    article {
+    width: 80%;
+    height: auto;
+  }
+  
+  .hide {
+            width: 70%;
+            padding: 56px;  
+        }
+        .text-block {
+    font-size: 14px; 
+}
+
+}
+
+
+@media only screen and (max-width: 390px) {
+    
+    nav{
+      font-size: 15px;
+    }
+    
+    .hide {
+          display: none;
+        }
+        .text-block {
+    font-size: 12px; 
+}    
+}  
+
+
+
+@media only screen and (max-width: 390px) {
+    
+    nav{
+      font-size: 15px;
+    }
+    
+    .hide {
+          display: none;
+        }
+        .text-block {
+    font-size: 12px; 
+}    
+}  
+
+h3{color:#262626}
+ 
+.img { 
+    height: 400px;
+    width: 100%;
+    padding: 5px;
+}  
+.news {
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .news-preview {
+            width: 50%;
+            padding: 1px;  
+        }
+        
+        .news-thumbnail {
+            width: 390px;
+            height: 300px;
+            
+            float: left;
+            padding-right: 20px;
+        }
+        .news-meta{
+            color: rgb(91, 90, 90);
+            font-size: 15px;
+        }
+        .read-more{
+            width: 100%;
+            background-color: #313131;
+            color:white;
+            padding: 2px;
+            font-size: 17px;
+        }
+.read{
+    background-color: #ffffff;
+            color:rgb(0, 0, 0);
+            padding: 2px;
+            font-size: 17px; 
+            float: right;  
+}
+
+   nav{ text-align:center;}
+
+h4{
+    color:#391922;
+}
+.container {
+    position: relative;   
+}
+
+.text-block {
+    position:absolute;
+    bottom: 10px;
+    width:98%;
+    background-color: rgba(251, 251, 251, 0.625);
+    color: rgb(9, 0, 0);
+    padding: 1px 10px;
+    text-align: left;
+    
+}
+    </style>
+</head>
+<body>
+  
+   
+      
+        <header class="container">
+           
+            <div class="text-block">
+                <h4>NEWS ABOUT CARS</h4>
+               
+                    <a href="#" class="read">Read More</a>
+               
+                
+            </div>
+        
+        </header>
+        
+          
+          
+          <article class="news">
+            
+            <section class="news-preview">
+                <h3 id="1">CARS</h3>
+                <p class="news-meta"> 05/04/24 </p>
+                <img  class="news-thumbnail" src="22.png" alt=" picture" >
+                
+                <p class="hide">cars</p>    
+            </section>
+            <a href="#" class="read-more">Read More</a>
+        
+            <section class="news-preview">
+                <h3 id="2">CARS</h3>
+                <p class="news-meta"> 05/04/24 </p>
+                <img src="33.png" alt="picture" class="news-thumbnail">
+                
+                <p class="hide">cars</p>
+            </section>
+            <a href="#" class="read-more">Read More</a>
+        
+            <section class="news-preview">
+                <h3 id="3">CARS</h3>
+                <p class="news-meta"> 05/04/24 </p>
+                <img src="44.png" alt="picture" class="news-thumbnail">
+                
+                <p class="hide">cars</p>
+            </section>
+            <a href="#" class="read-more">Read More</a>
+            
+        </article>
+        
+        
+        <nav>
+            <h3><nav>Navigation</nav></h3>
+            <ul>
+              <li><a href="#1">LINKS</a></li>
+              <li><a href="#2">LINKS </a></li>
+              <li><a href="#3">LINKS </a></li>
+            </ul>
+          </nav>
+        
+        </body>
+        </html>
